@@ -82,4 +82,7 @@ Plug 'iamcco/markdown-preview.vim'
 " Need these two thing to render math forlumar (uncomment if needed)
 " Plug 'iamcco/mathjax-support-for-mkdp'
 " Plug 'iamcco/markdown-preview.vim'
+
+" <Leader> based line commenter
+Plug 'scrooloose/nerdcommenter'
 call plug#end()
