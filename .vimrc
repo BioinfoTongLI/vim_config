@@ -51,6 +51,9 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
+"------ flake8 configuration ------
+:let g:flake8_show_in_gutter=1
+
 " -----change the leader key to ,~~~~~
 :let mapleader = ","
 
@@ -78,14 +81,17 @@ set t_Co=256
 :iabbrev ci \cite{} 
 :iabbrev waht what
 :iabbrev tehn then
+:iabbrev kt kinetochore
+:iabbrev kts kinetochores
+
 " vim-plug configuration
 call plug#begin()
 
 " markdown realted
 Plug 'iamcco/markdown-preview.vim'
 " Need these two thing to render math forlumar (uncomment if needed)
- Plug 'iamcco/mathjax-support-for-mkdp'
- Plug 'iamcco/markdown-preview.vim'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
 
 " <Leader> based line commenter
 Plug 'scrooloose/nerdcommenter'
