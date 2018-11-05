@@ -21,7 +21,7 @@ set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
-set laststatus=2
+set laststatus=2  " always display the status line
 set relativenumber
 set undofile
 
@@ -71,17 +71,21 @@ let python_highlight_all=1
 
 "powerline
 set rtp+=/home/tongli/.local/lib/python3.6/site-package/powerline/bindings/vim/
-set laststatus=2
 set t_Co=256
 
+"Abbrevations
+:iabbrev adn and
+:iabbrev ci \cite{} 
+:iabbrev waht what
+:iabbrev tehn then
 " vim-plug configuration
 call plug#begin()
 
 " markdown realted
 Plug 'iamcco/markdown-preview.vim'
 " Need these two thing to render math forlumar (uncomment if needed)
-" Plug 'iamcco/mathjax-support-for-mkdp'
-" Plug 'iamcco/markdown-preview.vim'
+ Plug 'iamcco/mathjax-support-for-mkdp'
+ Plug 'iamcco/markdown-preview.vim'
 
 " <Leader> based line commenter
 Plug 'scrooloose/nerdcommenter'
