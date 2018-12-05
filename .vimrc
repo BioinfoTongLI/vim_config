@@ -51,9 +51,6 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-"------ flake8 configuration ------
-:let g:flake8_show_in_gutter=1
-
 " -----change the leader key to ,~~~~~
 :let mapleader = ","
 
