@@ -68,6 +68,7 @@ let python_highlight_all=1
 
 " Languagetool configurations
 :let g:languagetool_jar='/Volumes/Macintosh/LanguageTool-4.2/languagetool-commandline.jar'
+:let g:languagetool_lang='en'
 
 "powerline
 set rtp+=/home/tongli/.local/lib/python3.6/site-package/powerline/bindings/vim/
@@ -93,3 +94,6 @@ Plug 'iamcco/markdown-preview.vim'
 " <Leader> based line commenter
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
+
+" Python
+nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
