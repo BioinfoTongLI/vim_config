@@ -34,10 +34,10 @@ set showmatch
 set hlsearch
 
 "~~~~~~~~~~set line width control~~~~~~~~~~~~
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-set colorcolumn=85
+"set wrap
+"set textwidth=79
+"set formatoptions=qrn1
+set colorcolumn=80
 
 "~~~~~~~~~~disable arrow keys in normal mode ~~~~~~~
 nnoremap <up> <nop>
@@ -81,6 +81,7 @@ set t_Co=256
 :iabbrev tehn then
 :iabbrev kt kinetochore
 :iabbrev kts kinetochores
+:iabbrev ciph [@]
 
 " vim-plug configuration
 call plug#begin()
