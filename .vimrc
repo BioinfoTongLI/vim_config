@@ -76,12 +76,13 @@ set t_Co=256
 
 "Abbrevations
 :iabbrev adn and
-:iabbrev ci \cite{} 
+:iabbrev citex \cite{} 
 :iabbrev waht what
 :iabbrev tehn then
 :iabbrev kt kinetochore
 :iabbrev kts kinetochores
 :iabbrev ciph [@]
+:iabbrev figph ![ \label{fig_}](source/figures/placeholder.png){ width=50% }
 
 " vim-plug configuration
 call plug#begin()
