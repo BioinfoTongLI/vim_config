@@ -81,6 +81,10 @@ set t_Co=256
 :iabbrev tehn then
 :iabbrev kt kinetochore
 :iabbrev kts kinetochores
+:iabbrev mu $\mu$
+:iabbrev alpha $\alpha$
+:iabbrev beta $\beta$
+:iabbrev gamme $\gamma$
 :iabbrev ciph [@]
 :iabbrev figph ![ \label{fig_}](source/figures/placeholder.png){ width=50% }
 
