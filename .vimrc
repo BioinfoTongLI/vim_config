@@ -67,7 +67,8 @@ filetype plugin indent on
 let python_highlight_all=1
 
 " Languagetool configurations
-:let g:languagetool_jar='/Volumes/Macintosh/LanguageTool-4.2/languagetool-commandline.jar'
+":let g:languagetool_jar='/Volumes/Macintosh/LanguageTool-4.2/languagetool-commandline.jar'
+:let g:languagetool_jar='/home/tongli/Documents/LanguageTool-4.2/languagetool-commandline.jar'
 :let g:languagetool_lang='en'
 
 "powerline
@@ -84,9 +85,9 @@ set t_Co=256
 :iabbrev mu $\mu$
 :iabbrev alpha $\alpha$
 :iabbrev beta $\beta$
-:iabbrev gamme $\gamma$
+:iabbrev gamma $\gamma$
 :iabbrev ciph [@]
-:iabbrev figph ![ \label{fig_}](source/figures/placeholder.png){ width=50% }
+:iabbrev figph ![ \label{fig_}](source/figures/placeholder.png){width=50%}
 
 " vim-plug configuration
 call plug#begin()
