@@ -22,7 +22,8 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2  " always display the status line
-set relativenumber
+"set relativenumber
+set number
 set undofile
 
 "~~~~~~~~~~better search highlighting~~~~~~~~~~
@@ -88,6 +89,10 @@ set t_Co=256
 :iabbrev gamma $\gamma$
 :iabbrev ciph [@]
 :iabbrev figph ![ \label{fig_}](source/figures/placeholder.png){width=50%}
+:iabbrev spombe _S.pombe_ 
+:iabbrev ie _i.e._ 
+:iabbrev eg _e.g._ 
+:iabbrev etc _etc._ 
 
 " vim-plug configuration
 call plug#begin()
