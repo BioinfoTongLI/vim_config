@@ -71,6 +71,10 @@ let python_highlight_all=1
 ":let g:languagetool_jar='/Volumes/Macintosh/LanguageTool-4.2/languagetool-commandline.jar'
 :let g:languagetool_jar='/home/tongli/Documents/LanguageTool-4.2/languagetool-commandline.jar'
 :let g:languagetool_lang='en'
+set spell
+hi LanguageToolGrammarError  guisp=blue gui=undercurl guifg=NONE guibg=NONE ctermfg=white ctermbg=blue term=underline cterm=none
+hi LanguageToolSpellingError guisp=yellow  gui=undercurl guifg=NONE guibg=NONE ctermfg=white ctermbg=red  term=underline cterm=none
+
 
 "powerline
 set rtp+=/home/tongli/.local/lib/python3.6/site-package/powerline/bindings/vim/
