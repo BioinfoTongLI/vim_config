@@ -111,5 +111,11 @@ Plug 'iamcco/markdown-preview.vim'
 Plug 'scrooloose/nerdcommenter'
 call plug#end()
 
-" Python
+" Run Python
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+
+" vim-template configuration
+:let g:email='tongli.bioinfo@gmail.com'
+:let g:templates_use_licensee='1'
+:let g:license='BSD-3'
+:let g:username='Tong LI'
