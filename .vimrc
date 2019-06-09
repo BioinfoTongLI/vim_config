@@ -22,7 +22,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2  " always display the status line
-"set relativenumber
+set relativenumber
 set number
 set undofile
 
@@ -35,8 +35,8 @@ set showmatch
 set hlsearch
 
 "~~~~~~~~~~set line width control~~~~~~~~~~~~
-"set wrap
-"set textwidth=79
+set wrap
+set textwidth=79
 "set formatoptions=qrn1
 set colorcolumn=80
 
@@ -119,3 +119,6 @@ nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 :let g:templates_use_licensee='1'
 :let g:license='BSD-3'
 :let g:username='Tong LI'
+
+" Fuzzy file find
+set path+=**
