@@ -37,8 +37,8 @@ set showmatch
 set hlsearch
 
 "~~~~~~~~~~set line width control~~~~~~~~~~~~
-set wrap
-set textwidth=79
+"set wrap
+"set textwidth=79
 "set formatoptions=qrn1
 set colorcolumn=80
 
@@ -73,13 +73,15 @@ syntax on
 filetype plugin indent on
 let python_highlight_all=1
 
-" Languagetool configurations
-:let g:languagetool_jar='~/Dropbox/LanguageTool-4.5/languagetool-commandline.jar'
-:let g:languagetool_lang='en-US'
-:let g:languagetool_disable_rules='WORD_CONTAINS_UNDERSCORE,EN_QUOTES,DASH_RULE'
-set spell
-hi LanguageToolGrammarError  guisp=blue gui=undercurl guifg=NONE guibg=NONE ctermfg=white ctermbg=blue term=underline cterm=none
-hi LanguageToolSpellingError guisp=yellow  gui=undercurl guifg=NONE guibg=NONE ctermfg=white ctermbg=red  term=underline cterm=none
+" Grammarous configurations
+set nospell
+let g:grammarous#disabled_rules = {
+			\ '*' : ['WORD_CONTAINS_UNDERSCORE,EN_QUOTES,DASH_RULE'],
+			\}
+set spellfile=~/.vim/spell/en.utf-8.add
+set spelllang=en_us
+let g:grammarous#enable_spell_check=1
+let g:grammarous#use_vim_spelllang=1
 
 "powerline
 set rtp+=/home/tongli/.local/lib/python3.6/site-package/powerline/bindings/vim/
@@ -91,6 +93,7 @@ set t_Co=256
 :iabbrev waht what
 :iabbrev tehn then
 " for writing
+:iabbrev phd _Ph.D_ 
 :iabbrev kt kinetochore
 :iabbrev kts kinetochores
 :iabbrev mu $\mu$
@@ -108,9 +111,9 @@ set t_Co=256
 " vim-plug configuration
 call plug#begin()
 
-" markdown realted
+" markdown related
 Plug 'iamcco/markdown-preview.vim'
-" Need these two thing to render math forlumar (uncomment if needed)
+" Need these two thing to render math formula (uncomment if needed)
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 
@@ -125,6 +128,10 @@ Plug 'valloric/youcompleteme'
 
 " Python lint
 Plug 'nvie/vim-flake8'
+
+" Grammar checking based on LanguageTool
+Plug 'rhysd/vim-grammarous'
+
 call plug#end()
 
 " Python-related
