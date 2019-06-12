@@ -83,6 +83,27 @@ set spelllang=en_us
 let g:grammarous#enable_spell_check=1
 let g:grammarous#use_vim_spelllang=1
 
+let g:grammarous#default_comments_only_filetypes = {
+            \ '*' : 1, 'python' : 0,
+            \ }
+
+let g:grammarous#hooks = {}
+function! g:grammarous#hooks.on_check(errs) abort
+    nmap <buffer><C-n> <Plug>(grammarous-move-to-next-error)
+    nmap <buffer><C-p> <Plug>(grammarous-move-to-previous-error)
+    nmap <buffer><C-r> <Plug>(grammarous-reset)
+    nmap <buffer><C-f> <Plug>(grammarous-fixit)
+endfunction
+
+function! g:grammarous#hooks.on_reset(errs) abort
+    nunmap <buffer><C-n>
+    nunmap <buffer><C-p>
+    nunmap <buffer><C-r>
+    nunmap <buffer><C-f>
+endfunction
+
+let g:grammarous#show_first_error=1
+
 "powerline
 set rtp+=/home/tongli/.local/lib/python3.6/site-package/powerline/bindings/vim/
 set t_Co=256
