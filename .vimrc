@@ -2,17 +2,19 @@
 " call pathogen#runtime_append_all_bundles()
 
 " required by LanguageTool
+syntax on
 filetype plugin indent on
 
 " set not to be compatible with vi
 set nocompatible
 
+set t_Co=256
 set modelines=0
 
 "~~~~~~~~~~decorations~~~~~~~~~
 set encoding=utf-8
 set scrolloff=3
-set autoindent
+"set autoindent
 set showmode
 set showcmd
 set hidden
@@ -69,8 +71,6 @@ nnoremap <C-H> <C-W><C-H>
 
 " run pathogen plugin management
 execute pathogen#infect()
-syntax on
-filetype plugin indent on
 let python_highlight_all=1
 
 " Grammarous configurations
@@ -82,10 +82,11 @@ set spellfile=~/.vim/spell/en.utf-8.add
 set spelllang=en_us
 let g:grammarous#enable_spell_check=1
 let g:grammarous#use_vim_spelllang=1
+let g:grammarous#show_first_error=1
 
 let g:grammarous#default_comments_only_filetypes = {
-            \ '*' : 1, 'python' : 0,
-            \ }
+	    \ '*' : 1, 'python' : 0, 'markdown' : 0,
+	    \ }
 
 let g:grammarous#hooks = {}
 function! g:grammarous#hooks.on_check(errs) abort
@@ -101,12 +102,6 @@ function! g:grammarous#hooks.on_reset(errs) abort
     nunmap <buffer><C-r>
     nunmap <buffer><C-f>
 endfunction
-
-let g:grammarous#show_first_error=1
-
-"powerline
-set rtp+=/home/tongli/.local/lib/python3.6/site-package/powerline/bindings/vim/
-set t_Co=256
 
 "Abbrevations
 " for typos
@@ -158,6 +153,10 @@ call plug#end()
 " Python-related
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 autocmd BufWritePost *.py call flake8#Flake8()
+" Force indentation styles for this directory
+autocmd FileType python set shiftwidth=2
+autocmd FileType python set tabstop=2
+autocmd FileType python set softtabstop=2
 
 " vim-template configuration
 :let g:email='tongli.bioinfo@gmail.com'
