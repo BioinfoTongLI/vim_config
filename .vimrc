@@ -154,9 +154,9 @@ call plug#end()
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 autocmd BufWritePost *.py call flake8#Flake8()
 " Force indentation styles for this directory
-autocmd FileType python set shiftwidth=2
-autocmd FileType python set tabstop=2
-autocmd FileType python set softtabstop=2
+autocmd FileType python set shiftwidth=4
+autocmd FileType python set tabstop=4
+autocmd FileType python set softtabstop=4
 
 " vim-template configuration
 :let g:email='tongli.bioinfo@gmail.com'
