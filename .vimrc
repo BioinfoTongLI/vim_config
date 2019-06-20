@@ -1,9 +1,9 @@
 " filetype off
 " call pathogen#runtime_append_all_bundles()
 
-" required by LanguageTool
 syntax on
 filetype plugin indent on
+filetype indent on
 
 " set not to be compatible with vi
 set nocompatible
@@ -148,6 +148,12 @@ Plug 'nvie/vim-flake8'
 " Grammar checking based on LanguageTool
 Plug 'rhysd/vim-grammarous'
 
+" Python autoformatter
+Plug 'python/black'
+
+" vim-template
+Plug 'aperezdc/vim-template'
+
 call plug#end()
 
 " Python-related
@@ -157,6 +163,7 @@ autocmd BufWritePost *.py call flake8#Flake8()
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set tabstop=4
 autocmd FileType python set softtabstop=4
+autocmd FileType python set expandtab
 
 " vim-template configuration
 :let g:email='tongli.bioinfo@gmail.com'
