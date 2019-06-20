@@ -1,5 +1,4 @@
 " filetype off
-" call pathogen#runtime_append_all_bundles()
 
 syntax on
 filetype plugin indent on
@@ -149,7 +148,7 @@ Plug 'nvie/vim-flake8'
 Plug 'rhysd/vim-grammarous'
 
 " Python autoformatter
-Plug 'python/black'
+"Plug 'python/black'
 
 " vim-template
 Plug 'aperezdc/vim-template'
