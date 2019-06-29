@@ -142,7 +142,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'valloric/youcompleteme'
 
 " Python lint
-Plug 'nvie/vim-flake8'
+"Plug 'nvie/vim-flake8'
 
 " Grammar checking based on LanguageTool
 Plug 'rhysd/vim-grammarous'
@@ -157,7 +157,7 @@ call plug#end()
 
 " Python-related
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
-autocmd BufWritePost *.py call flake8#Flake8()
+"autocmd BufWritePost *.py call flake8#Flake8()
 " Force indentation styles for this directory
 autocmd FileType python set shiftwidth=4
 autocmd FileType python set tabstop=4
