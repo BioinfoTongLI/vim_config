@@ -118,7 +118,7 @@ endfunction
 :iabbrev citex \cite{}
 :iabbrev ciph [@]
 :iabbrev figph ![ \label{fig_}](source/figures/placeholder.png){width=50%}
-:iabbrev spombe _S.pombe_ 
+:iabbrev spombe _S.Pombe_ 
 :iabbrev ie _i.e._ 
 :iabbrev eg _e.g._ 
 :iabbrev etc _etc._ 
