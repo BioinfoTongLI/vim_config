@@ -325,3 +325,16 @@ KNIME
 ROIs
 coverslip
 XY
+autofocus
+XY-drift
+TurboReg
+StackReg
+Github
+Numba
+LLVM
+Numpy
+Scipy
+Trackmate
+LoG
+Trackmate
+TrackPy
