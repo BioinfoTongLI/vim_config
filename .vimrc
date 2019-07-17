@@ -115,9 +115,10 @@ endfunction
 :iabbrev alpha $\alpha$
 :iabbrev beta $\beta$
 :iabbrev gamma $\gamma$
+:iabbrev delta $\Delta$
 :iabbrev citex \cite{}
 :iabbrev ciph [@]
-:iabbrev figph ![ \label{fig_}](source/figures/placeholder.png){width=50%}
+:iabbrev figph ![ \label{fig-}](source/figures/placeholder.png){width=50%}
 :iabbrev spombe _S.Pombe_ 
 :iabbrev ie _i.e._ 
 :iabbrev eg _e.g._ 
