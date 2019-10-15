@@ -173,3 +173,6 @@ autocmd FileType python set expandtab
 
 " Fuzzy file find
 set path+=**
+
+" autoremove trailing spaces
+autocmd BufWritePre * :%s/\s\+$//e
