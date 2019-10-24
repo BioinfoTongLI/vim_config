@@ -108,7 +108,7 @@ endfunction
 :iabbrev waht what
 :iabbrev tehn then
 " for writing
-:iabbrev phd _Ph.D_ 
+:iabbrev phd _Ph.D_
 :iabbrev kt kinetochore
 :iabbrev kts kinetochores
 :iabbrev mu $\mu$
@@ -117,12 +117,13 @@ endfunction
 :iabbrev gamma $\gamma$
 :iabbrev delta $\Delta$
 :iabbrev citex \cite{}
-:iabbrev ciph [@]
-:iabbrev figph ![ \label{fig-}](source/figures/placeholder.png){width=50%}
-:iabbrev spombe _S.Pombe_ 
-:iabbrev ie _i.e._ 
-:iabbrev eg _e.g._ 
-:iabbrev etc _etc._ 
+:iabbrev figph ![ \label{fig-}](source/figures/placeholder.png){width=100%}
+:iabbrev sidfigph \begin{sidewaysfigure}<CR><Tab>\begin{subfigure}{\textwidth}<CR><Tab><Tab>\centering<CR><Tab><Tab>\includegraphics{source/figures/screening/.png}<CR><Tab><Tab>\caption{DABEST estimation plot of }<CR><Tab>\end{subfigure}<CR><CR><Tab>\begin{subfigure}{\textwidth}<CR><Tab><Tab>\centering<CR><Tab><Tab>\includegraphics{source/figures/screening/.png}<CR><Tab><Tab>\caption{DABEST estimation plot of }<CR><Tab>\end{subfigure}<CR><Tab>\caption{}<CR>\end{sidewaysfigure}
+:iabbrev figphdouble ![ with TBZ](source/figures/tbz/.png){width=100%}<CR><CR>![ with TBZ](source/figures/tbz/.png){width=100%}<CR><CR>\newpage<CR><CR>
+:iabbrev spombe _S.Pombe_
+:iabbrev ie _i.e._
+:iabbrev eg _e.g._
+:iabbrev etc _etc._
 
 " vim-plug configuration
 call plug#begin()
