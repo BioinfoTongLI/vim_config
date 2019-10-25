@@ -25,8 +25,8 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2  " always display the status line
-set relativenumber
-set number
+"set relativenumber
+"set number
 set undofile
 
 "~~~~~~~~~~better search highlighting~~~~~~~~~~
