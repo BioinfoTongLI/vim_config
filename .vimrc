@@ -120,7 +120,7 @@ endfunction
 :iabbrev figph ![ \label{fig-}](source/figures/placeholder.png){width=100%}
 :iabbrev sidfigph \begin{sidewaysfigure}<CR><Tab>\begin{subfigure}{\textwidth}<CR><Tab><Tab>\centering<CR><Tab><Tab>\includegraphics{source/figures/screening/.png}<CR><Tab><Tab>\caption{DABEST estimation plot of }<CR><Tab>\end{subfigure}<CR><CR><Tab>\begin{subfigure}{\textwidth}<CR><Tab><Tab>\centering<CR><Tab><Tab>\includegraphics{source/figures/screening/.png}<CR><Tab><Tab>\caption{DABEST estimation plot of }<CR><Tab>\end{subfigure}<CR><Tab>\caption{}<CR>\end{sidewaysfigure}
 :iabbrev figphdouble ![DABEST estimation plot of with TBZ](source/figures/tbz/.png){width=100%}<CR><CR>![DABEST estimation plot of with TBZ](source/figures/tbz/.png){width=100%}<CR><CR>\newpage<CR>
-:iabbrev spombe _S.Pombe_
+:iabbrev spombe _S.pombe_
 :iabbrev ie _i.e._
 :iabbrev eg _e.g._
 :iabbrev etc _etc._
