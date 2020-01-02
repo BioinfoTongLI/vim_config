@@ -69,7 +69,8 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " run pathogen plugin management
-execute pathogen#infect()
+"execute pathogen#infect()
+
 let python_highlight_all=1
 
 " Grammarous configurations
@@ -134,6 +135,8 @@ Plug 'iamcco/markdown-preview.vim'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 
+Plug 'scrooloose/nerdtree'
+
 " <Leader> based line commenter
 Plug 'scrooloose/nerdcommenter'
 
@@ -154,6 +157,15 @@ Plug 'rhysd/vim-grammarous'
 
 " vim-template
 Plug 'aperezdc/vim-template'
+
+" Quick calendar creation
+Plug 'mattn/calendar-vim'
+
+" org mode for task management
+Plug 'jceb/vim-orgmode'
+
+" org mode deps: to increase/decrease date rapidely
+Plug 'tpope/vim-speeddating'
 
 call plug#end()
 
