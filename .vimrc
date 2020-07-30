@@ -25,8 +25,8 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2  " always display the status line
-set relativenumber
-set number
+"set relativenumber
+"set number
 set undofile
 
 "~~~~~~~~~~better search highlighting~~~~~~~~~~
@@ -179,7 +179,7 @@ autocmd FileType python set softtabstop=4
 autocmd FileType python set expandtab
 
 " vim-template configuration
-:let g:email='tongli.bioinfo@gmail.com'
+:let g:email='tongli.bioinfo@protonmail.com'
 :let g:templates_use_licensee='1'
 :let g:license='BSD-3'
 :let g:username='Tong LI'
