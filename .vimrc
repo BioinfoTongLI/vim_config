@@ -178,9 +178,13 @@ autocmd FileType python set tabstop=4
 autocmd FileType python set softtabstop=4
 autocmd FileType python set expandtab
 
+autocmd FileType nextflow set tabstop=4
+autocmd FileType nextflow set shiftwidth=4
+autocmd FileType nextflow set softtabstop=4
+autocmd FileType nextflow set expandtab
 " vim-template configuration
 :let g:email='tongli.bioinfo@protonmail.com'
-:let g:templates_use_licensee='1'
+:let g:templates_use_licensee='0'
 :let g:license='BSD-3'
 :let g:username='Tong LI'
 
