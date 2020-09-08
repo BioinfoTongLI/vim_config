@@ -167,6 +167,12 @@ Plug 'jceb/vim-orgmode'
 " org mode deps: to increase/decrease date rapidely
 Plug 'tpope/vim-speeddating'
 
+" Distraction-free mode
+Plug 'junegunn/goyo.vim'
+
+" Nextflow highlight
+Plug 'LukeGoodsell/nextflow-vim'
+
 call plug#end()
 
 " Python-related
