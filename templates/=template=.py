@@ -13,14 +13,13 @@ import argparse
 
 
 def main(args):
-    print(args._in)
+    print(args)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("-_in", type=str,
-            required=True)
+    parser.add_argument("-in", type=str, required=True)
 
     args = parser.parse_args()
 

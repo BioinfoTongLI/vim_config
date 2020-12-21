@@ -130,10 +130,14 @@ endfunction
 call plug#begin()
 
 " markdown related
-Plug 'iamcco/markdown-preview.vim'
+"Plug 'iamcco/markdown-preview.vim'
 " Need these two thing to render math formula (uncomment if needed)
-Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'iamcco/markdown-preview.vim'
+"Plug 'iamcco/mathjax-support-for-mkdp'
+"Plug 'iamcco/markdown-preview.vim'
+" Distraction-free mode
+"Plug 'junegunn/goyo.vim'
+
+
 
 Plug 'scrooloose/nerdtree'
 
@@ -150,28 +154,23 @@ Plug 'valloric/youcompleteme'
 "Plug 'nvie/vim-flake8'
 
 " Grammar checking based on LanguageTool
-Plug 'rhysd/vim-grammarous'
-
-" Python autoformatter
-"Plug 'python/black'
+"Plug 'rhysd/vim-grammarous'
 
 " vim-template
 Plug 'aperezdc/vim-template'
 
-" Quick calendar creation
-Plug 'mattn/calendar-vim'
-
-" org mode for task management
-Plug 'jceb/vim-orgmode'
-
-" org mode deps: to increase/decrease date rapidely
-Plug 'tpope/vim-speeddating'
-
-" Distraction-free mode
-Plug 'junegunn/goyo.vim'
-
 " Nextflow highlight
 Plug 'LukeGoodsell/nextflow-vim'
+
+"""" argmode-related""""""
+" Quick calendar creation
+"Plug 'mattn/calendar-vim'
+
+" org mode for task management
+"Plug 'jceb/vim-orgmode'
+
+" org mode deps: to increase/decrease date rapidely
+"Plug 'tpope/vim-speeddating'
 
 call plug#end()
 
