@@ -9,18 +9,12 @@
 """
 %HERE%
 """
-import argparse
+import fire
 
 
-def main(args):
-    print(args)
+def main(file_in):
+    print(file_in)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument("-in", type=str, required=True)
-
-    args = parser.parse_args()
-
-    main(args)
+    fire.Fire(main)
