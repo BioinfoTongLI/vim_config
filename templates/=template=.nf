@@ -1,15 +1,21 @@
 #!/usr/bin/env/ nextflow
+// Copyright © %YEAR% %USER% <%MAIL%>
 
-// Copyright (C) 2020 Tong LI <tongli.bioinfo@protonmail.com>
+nextflow.enable.dsl=2
+
 
 process {
 
     input:
 
-    //output:
+    output:
 
     script:
     """
     """
 }
 
+
+workflow {
+
+}
