@@ -162,6 +162,12 @@ Plug 'aperezdc/vim-template'
 " Nextflow highlight
 Plug 'LukeGoodsell/nextflow-vim'
 
+" Linting for yaml (and other config files)
+Plug 'editorconfig/editorconfig-vim'
+
+" Git helper
+Plug 'tpope/vim-fugitive'
+
 """" argmode-related""""""
 " Quick calendar creation
 "Plug 'mattn/calendar-vim'
@@ -188,7 +194,7 @@ autocmd FileType nextflow set shiftwidth=4
 autocmd FileType nextflow set softtabstop=4
 autocmd FileType nextflow set expandtab
 " vim-template configuration
-:let g:email='tongli.bioinfo@protonmail.com'
+:let g:email='tongli.bioinfo@proton.me'
 :let g:templates_use_licensee='0'
 :let g:license='BSD-3'
 :let g:username='Tong LI'
@@ -198,3 +204,8 @@ set path+=**
 
 " autoremove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
+
+" EditConfig setting
+let g:EditorConfig_indent_style='tab'
+let g:EditorConfig_indent_size=4
+let g:EditorConfig_trim_trailing_whitespace='true'
